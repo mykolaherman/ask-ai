@@ -28,3 +28,7 @@ app.post("/api/milk-recommendation", async (req, res) => {
     res.status(500).json({ error: "AI request failed" });
   }
 });
+
+app.listen(3000, () => {
+  console.log("🚀 Server is running on http://localhost:3000");
+});
