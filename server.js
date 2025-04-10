@@ -14,7 +14,6 @@ app.post("/api/milk-recommendation", async (req, res) => {
   const { messages } = req.body;
 
   try {
-    await nodeFetch("https://api.com", {})
     const response = await axios.post(
       "https://api.openai.com/v1/chat/completions",
       {
