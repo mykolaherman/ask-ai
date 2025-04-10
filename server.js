@@ -1,7 +1,13 @@
 const express = require('express');
 const fetch = require('node-fetch');
+const cors = require('cors');
 
 const app = express();
+app.use(cors({
+  origin: 'https://fromaggio.com',
+  methods: ['POST', 'GET', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
 app.post("/api/milk-recommendation", async (req, res) => {
