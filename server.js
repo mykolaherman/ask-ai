@@ -1,5 +1,5 @@
 const express = require('express');
-const fetch = require('node-fetch');
+const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
@@ -14,21 +14,23 @@ app.post("/api/milk-recommendation", async (req, res) => {
   const { messages } = req.body;
 
   try {
-    const openaiRes = await fetch("https://api.openai.com/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
+    await nodeFetch("https://api.com", {})
+    const response = await axios.post(
+      "https://api.openai.com/v1/chat/completions",
+      {
         model: "gpt-4o-mini",
         max_tokens: 500,
         messages
-      })
-    });
+      },
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${process.env.OPENAI_API_KEY}`
+        }
+      }
+    );
 
-    const data = await openaiRes.json();
-    res.json(data);
+    res.json(response.data);
   } catch (err) {
     console.error("❌ Error calling OpenAI:", err);
     res.status(500).json({ error: "AI request failed" });
