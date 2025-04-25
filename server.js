@@ -37,7 +37,7 @@ app.post("/api/milk-recommendation", async (req, res) => {
 });
 
 app.post('/api/generate-cheese', async (req, res) => {
-  console.log('generate cheese called');
+  console.log(`generate cheese called from ip: ${req.ip}`,);
   const { prompt } = req.body;
   if (!prompt) {
     return res.status(400).json({ error: 'Prompt is required' });
@@ -77,7 +77,7 @@ app.post('/api/generate-cheese', async (req, res) => {
               +Ingredients: Each includes only one Fromaggio-branded product with exact name and quantity. Must follow all pairing and sequence rules. Recipes must include at least one Fromaggio ingredient—usually Fromaggio TartMate Citric Acid, Fromaggio Microbial Rennet for Soft Cheese, or Fromaggio Microbial Rennet for Hard Cheese. Each ingredient line must begin with the word "Add" and follow the exact format: "Add [amount] - [ingredient name]."
 
               Follow these ingredient rules:
-              - Add 7 drops - Fromaggio Calcium Chloride Boost *only if milk is pasteurized*
+              - Add 7 drop(s) - Fromaggio Calcium Chloride Boost *only if milk is pasteurized*
               - Add cheese culture *after a proper Heat step*
               - Mix after every +Ingredients step (1 min, 50 rpm, at current temp)
               - Use Heat step before and after rennet, include stabilization rest step (speed Off)
@@ -123,10 +123,12 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Fromaggio TartMate Citric Acid
 
               Use 2 grams for all culture and rennet ingredients. 
-              Use 7 drops of Calcium Chloride Boost unless using raw milk. 
+              Use 7 drop(s) of Calcium Chloride Boost unless using raw milk. 
               Use 4.5 to 6 grams of Citric Acid depending on recipe context. 
               Salt is typically added after draining, using standard dosages for 3 liters of milk. 
-              All ingredient quantities are in grams except Calcium Chloride which is in drops.`,
+              All ingredient quantities are in grams except Calcium Chloride which is in drop(s).
+
+              All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'g', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.`,
           },
           {
             role: 'user',
