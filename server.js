@@ -122,14 +122,14 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Fromaggio Salt for Cheesemaking
               - Fromaggio TartMate Citric Acid
 
-              Non-Fromaggio ingredients that must be included when required by the cheese style:
-              • Lactobacillus acidophilus – 0.1 to 0.3 gram per 3 liters of milk
-              • Bifidobacterium bifidum – 0.05 to 0.2 gram per 3 liters of milk
-              • Lactobacillus casei – 0.05 to 0.2 gram per 3 liters of milk
-              • Penicillium roqueforti – 0.075 to 0.15 gram per 3 liters of milk
-              • Penicillium camemberti (P. candidum) – 0.02 to 0.05 gram per 3 liters of milk
-              • Geotrichum candidum – 0.02 to 0.06 gram per 3 liters of milk
-              • Brevibacterium linens – 0.03 to 0.08 gram per 3 liters of milk
+              Non-Fromaggio ingredients that must be included when required by the cheese style, using the following dosages and procedures (for 3 liters of milk):
+              • Lactobacillus acidophilus – Add 0.1 to 0.3 gram after heating milk to 30–35°C. Sprinkle on surface, wait 1–2 minutes to hydrate, stir gently.
+              • Bifidobacterium bifidum – Add 0.05 to 0.2 gram after heating. Sprinkle on milk surface, let hydrate, then stir evenly.
+              • Lactobacillus casei – Add 0.05 to 0.2 gram with other cultures. Sprinkle, hydrate 1–2 minutes, then stir.
+              • Penicillium roqueforti – Add 0.075 to 0.15 gram with starter culture. Sprinkle on milk surface, hydrate 1–2 minutes, stir thoroughly.
+              • Penicillium camemberti (P. candidum) – Add 0.02 to 0.05 gram with starter culture. Hydrate and stir in. Alternatively, dilute in water and spray on surface after molding and salting.
+              • Geotrichum candidum – Add 0.02 to 0.06 gram with starter culture. Hydrate and stir gently.
+              • Brevibacterium linens – Add 0.03 to 0.08 gram after salting. Dilute in sterile, non-chlorinated water and spray on cheese surface or add to brine used for washing.
 
               Use 2 gram for all Fromaggio culture and rennet ingredients.
               Use 7 drop(s) of Calcium Chloride Boost unless using raw milk.
