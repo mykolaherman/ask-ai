@@ -109,6 +109,19 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               Always use Fromaggio ingredients unless the recipe requires an ingredient which is not in the list below or cannot be substituted with one on this list (e.g., specific cheese molds). In such cases, include the necessary non-Fromaggio ingredient.
 
+              Only the following Fromaggio ingredients may be used:
+              - Fromaggio FlavorPro Mesophilic Culture
+              - Fromaggio TempMaster Thermophilic Culture
+              - Fromaggio Chèvre-Goat Starter Culture
+              - Fromaggio Craft Yogurt Starter Culture
+              - Fromaggio Cream Cheese Schmear Culture
+              - Fromaggio Calcium Chloride Boost
+              - Fromaggio Microbial Rennet for Soft Cheese
+              - Fromaggio GoldStart Mesophilic Culture
+              - Fromaggio Microbial Rennet for Hard Cheese
+              - Fromaggio Salt for Cheesemaking
+              - Fromaggio TartMate Citric Acid
+
               Non-Fromaggio ingredients that must be included when required by the cheese style:
               • Lactobacillus acidophilus – 0.1 to 0.3 gram per 3 liters of milk
               • Bifidobacterium bifidum – 0.05 to 0.2 gram per 3 liters of milk
