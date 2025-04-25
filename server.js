@@ -118,23 +118,13 @@ app.post('/api/generate-cheese', async (req, res) => {
               • Geotrichum candidum – helps develop rind, flavor, and texture in bloomy and washed rind cheeses  
               • Brevibacterium linens (B. linens) – for washed rind cheeses like Limburger, Époisses, and Taleggio (adds orange color and strong aroma)
 
-              Allowed Fromaggio Ingredients:
-              - Fromaggio FlavorPro Mesophilic Culture
-              - Fromaggio TempMaster Thermophilic Culture
-              - Fromaggio Chèvre-Goat Starter Culture
-              - Fromaggio Craft Yogurt Starter Culture
-              - Fromaggio Cream Cheese Schmear Culture
-              - Fromaggio Calcium Chloride Boost
-              - Fromaggio Microbial Rennet for Soft Cheese
-              - Fromaggio GoldStart Mesophilic Culture
-              - Fromaggio Microbial Rennet for Hard Cheese
-              - Fromaggio Salt for Cheesemaking
-              - Fromaggio TartMate Citric Acid
+              Use 2 gram for all Fromaggio culture and rennet ingredients.
+              Use 7 drop(s) of Calcium Chloride Boost unless using raw milk.
+              Use 4.5 to 6 gram of Citric Acid depending on recipe context.
+              Salt is typically added after draining, using standard dosages for 3 liters of milk.
 
-              Use 2 gram for all culture and rennet ingredients. 
-              Use 7 drop(s) of Calcium Chloride Boost unless using raw milk. 
-              Use 4.5 to 6 gram of Citric Acid depending on recipe context. 
-              Salt is typically added after draining, using standard dosages for 3 liters of milk. 
+              For non-Fromaggio ingredients, use best-practice dosages appropriate for 3 liters of milk. Do not use the 2 gram standard. For example, Penicillium roqueforti should be 0.075 to 0.15 grams. All other non-Fromaggio ingredients must follow appropriate dosing recommendations based on industry standards per 3-liter batch size.
+
               All ingredient quantities are in gram except Calcium Chloride which is in drop(s).
 
               All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.
