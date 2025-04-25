@@ -122,6 +122,11 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Fromaggio Salt for Cheesemaking
               - Fromaggio TartMate Citric Acid
 
+              Use 2 gram for all Fromaggio culture and rennet ingredients. When adjusting for other conditions, use even numbers in grams (e.g., 2, 4, 6).
+              Use 7 drop(s) of Calcium Chloride Boost unless using raw milk.
+              Use 4.5 to 6 gram of Citric Acid depending on recipe context.
+              Salt is typically added after draining, using standard dosages for 3 liters of milk.
+
               Non-Fromaggio ingredients that must be included when required by the cheese style, using the following dosages and procedures (for 3 liters of milk):
               • Lactobacillus acidophilus – Add 0.1 to 0.3 gram after heating milk to 30–35°C. Sprinkle on surface, wait 1–2 minutes to hydrate, stir gently.
               • Bifidobacterium bifidum – Add 0.05 to 0.2 gram after heating. Sprinkle on milk surface, let hydrate, then stir evenly.
@@ -130,11 +135,6 @@ app.post('/api/generate-cheese', async (req, res) => {
               • Penicillium camemberti (P. candidum) – Add 0.02 to 0.05 gram with starter culture. Hydrate and stir in. Alternatively, dilute in water and spray on surface after molding and salting.
               • Geotrichum candidum – Add 0.02 to 0.06 gram with starter culture. Hydrate and stir gently.
               • Brevibacterium linens – Add 0.03 to 0.08 gram after salting. Dilute in sterile, non-chlorinated water and spray on cheese surface or add to brine used for washing.
-
-              Use 2 gram for all Fromaggio culture and rennet ingredients.
-              Use 7 drop(s) of Calcium Chloride Boost unless using raw milk.
-              Use 4.5 to 6 gram of Citric Acid depending on recipe context.
-              Salt is typically added after draining, using standard dosages for 3 liters of milk.
 
               All ingredient quantities are in gram except Calcium Chloride which is in drop(s).
 
