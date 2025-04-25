@@ -110,20 +110,18 @@ app.post('/api/generate-cheese', async (req, res) => {
               Always use Fromaggio ingredients unless the recipe requires an ingredient which is not in the list below or cannot be substituted with one on this list (e.g., specific cheese molds). In such cases, include the necessary non-Fromaggio ingredient.
 
               Non-Fromaggio ingredients that must be included when required by the cheese style:
-              • Lactobacillus acidophilus  
-              • Bifidobacterium bifidum  
-              • Lactobacillus casei  
-              • Penicillium roqueforti – for blue cheeses like Roquefort, Gorgonzola, Stilton  
-              • Penicillium camemberti (also called P. candidum) – for bloomy rind cheeses like Brie and Camembert  
-              • Geotrichum candidum – helps develop rind, flavor, and texture in bloomy and washed rind cheeses  
-              • Brevibacterium linens (B. linens) – for washed rind cheeses like Limburger, Époisses, and Taleggio (adds orange color and strong aroma)
+              • Lactobacillus acidophilus – 0.1 to 0.3 gram per 3 liters of milk
+              • Bifidobacterium bifidum – 0.05 to 0.2 gram per 3 liters of milk
+              • Lactobacillus casei – 0.05 to 0.2 gram per 3 liters of milk
+              • Penicillium roqueforti – 0.075 to 0.15 gram per 3 liters of milk
+              • Penicillium camemberti (P. candidum) – 0.02 to 0.05 gram per 3 liters of milk
+              • Geotrichum candidum – 0.02 to 0.06 gram per 3 liters of milk
+              • Brevibacterium linens – 0.03 to 0.08 gram per 3 liters of milk
 
               Use 2 gram for all Fromaggio culture and rennet ingredients.
               Use 7 drop(s) of Calcium Chloride Boost unless using raw milk.
               Use 4.5 to 6 gram of Citric Acid depending on recipe context.
               Salt is typically added after draining, using standard dosages for 3 liters of milk.
-
-              For non-Fromaggio ingredients, use best-practice dosages appropriate for 3 liters of milk. Do not use the 2 gram standard. For example, Penicillium roqueforti should be 0.075 to 0.15 grams. All other non-Fromaggio ingredients must follow appropriate dosing recommendations based on industry standards per 3-liter batch size.
 
               All ingredient quantities are in gram except Calcium Chloride which is in drop(s).
 
