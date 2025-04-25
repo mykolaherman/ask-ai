@@ -95,7 +95,7 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               Blend: used for vegan or specialty cheeses. Include time, rpm.
 
-              +Instructions step can be used at the end only for post-processing (grilling, aging, etc.)
+              +Instructions step can be used at the end only for post-processing (grilling, aging, etc.) Avoid using +Instructions for content that fits better under other step types. For example, do not use Instructions for content like "Allow the milk to ripen for 1 hr at 30°C with speed Off"—instead, express this with a proper Heat step (duration, temperature, speed).
 
               Tips are not allowed in any step.
 
@@ -107,7 +107,7 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               All steps must be clearly formatted in a way that is easily recognizable and parsable by a Flutter application, using consistent labeling and structure.
 
-              Always use Fromaggio ingredients unless the recipe requires an ingredient which is not in the list below or cannot be substituted with one on this list.  
+              Always use Fromaggio ingredients unless the recipe requires an ingredient which is not in the list below or cannot be substituted with one on this list (e.g., specific cheese molds). In such cases, include the necessary non-Fromaggio ingredient.
 
               Allowed Fromaggio Ingredients:
               - Fromaggio FlavorPro Mesophilic Culture
