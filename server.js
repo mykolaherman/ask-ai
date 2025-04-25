@@ -109,6 +109,15 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               Always use Fromaggio ingredients unless the recipe requires an ingredient which is not in the list below or cannot be substituted with one on this list (e.g., specific cheese molds). In such cases, include the necessary non-Fromaggio ingredient.
 
+              Non-Fromaggio ingredients that must be included when required by the cheese style:
+              • Lactobacillus acidophilus  
+              • Bifidobacterium bifidum  
+              • Lactobacillus casei  
+              • Penicillium roqueforti – for blue cheeses like Roquefort, Gorgonzola, Stilton  
+              • Penicillium camemberti (also called P. candidum) – for bloomy rind cheeses like Brie and Camembert  
+              • Geotrichum candidum – helps develop rind, flavor, and texture in bloomy and washed rind cheeses  
+              • Brevibacterium linens (B. linens) – for washed rind cheeses like Limburger, Époisses, and Taleggio (adds orange color and strong aroma)
+
               Allowed Fromaggio Ingredients:
               - Fromaggio FlavorPro Mesophilic Culture
               - Fromaggio TempMaster Thermophilic Culture
@@ -130,7 +139,9 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.
 
-              Do not use fractions when giving numbers for ingredient amounts. Always round the numbers when possible, but if it's very important, then use a decimal, not a fraction.`,
+              Do not use fractions when giving numbers for ingredient amounts. Always round the numbers when possible, but if it's very important, then use a decimal, not a fraction.
+
+              Do not ask the user to clarify. No matter what the input is—short, long, or unclear—you must always create a recipe.`,
           },
           {
             role: 'user',
