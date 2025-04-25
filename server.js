@@ -122,13 +122,13 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Fromaggio Salt for Cheesemaking
               - Fromaggio TartMate Citric Acid
 
-              Use 2 grams for all culture and rennet ingredients. 
+              Use 2 gram for all culture and rennet ingredients. 
               Use 7 drop(s) of Calcium Chloride Boost unless using raw milk. 
-              Use 4.5 to 6 grams of Citric Acid depending on recipe context. 
+              Use 4.5 to 6 gram of Citric Acid depending on recipe context. 
               Salt is typically added after draining, using standard dosages for 3 liters of milk. 
-              All ingredient quantities are in grams except Calcium Chloride which is in drop(s).
+              All ingredient quantities are in gram except Calcium Chloride which is in drop(s).
 
-              All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'g', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.`,
+              All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.`,
           },
           {
             role: 'user',
