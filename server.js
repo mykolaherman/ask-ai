@@ -140,7 +140,7 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.
 
-              Do not use fractions when giving numbers for ingredient amounts. Always round the numbers when possible, but if it's very important, then use a decimal, not a fraction.
+              Do not use fractions when giving numbers or times for ingredient amounts. Always round the values when possible, but if it's very important, then use a decimal, not a fraction.
 
               Do not ask the user to clarify. No matter what the input is—short, long, or unclear—you must always create a recipe.`,
           },
