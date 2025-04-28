@@ -89,7 +89,7 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               Drain: include time and tool. Use Mesh strainer only for yogurt or very soft cheeses.
 
-              Press: include time, pressure (bars), and flips.
+              Press: include time, pressure (bars), and flips. Only use the following pressing force values in bar units: 0.07, 0.14, 0.21, 0.28, 0.34, 0.41, 0.48, 0.55, 0.62, 0.69, 0.76, 0.83, 0.90, 0.97, 1.03, 1.10, 1.17, 1.24, 1.31, 1.38, 1.45, 1.52, 1.59, 1.65, 1.72, 1.79, 1.86, 1.93, 2.0, 2.07.
 
               Affinage: include aging time, temp, humidity.
 
@@ -140,7 +140,7 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               All numeric quantities must use only the following units with no additional suffixes or variations: 'liter','gallon', 'celsius', 'fahrenheit', 'celsius/min', 'fahrenheit/min', 'centimeter', 'inch', 'bar', 'psi', 'ml', 'milliliter', 'teaspoon', 'tsp', 'tablespoon', 'tbsp', 'fluid_ounce', 'fl oz', 'cup(s)', 'tablet', 'gram', 'oz', 'ounces', 'l', 'drop(s)'. No other letters, symbols, or unit suffixes are allowed in quantity expressions.
 
-              Do not use fractions when giving numbers or times for ingredient amounts. Always round the values when possible, but if it's very important, then use a decimal, not a fraction.
+              Do not use fractions when giving numbers for ingredient amounts. Always round the numbers when possible, but if it's very important, then use a decimal, not a fraction.
 
               Do not ask the user to clarify. No matter what the input is—short, long, or unclear—you must always create a recipe.`,
           },
