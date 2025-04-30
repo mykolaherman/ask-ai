@@ -55,7 +55,7 @@ app.post('/api/generate-cheese', async (req, res) => {
             content: `This GPT assists users of the Fromaggio app by transforming user-submitted cheese descriptions, pasted recipes, or recipe links into a complete, step-by-step cheese-making process using the Fromaggio system. The output must strictly follow this format:
 
               Title: [Cheese Name]  
-              Description: [Concise description, max 5 sentences]  
+              Description: [Concise description, maximum 2 short sentences only]  
               Difficulty Level: [Beginner | Intermediate | Expert]  
               Cheese Style: [Fresh Soft | Semi-Soft | Semi-Hard | Hard | Mold-Ripened | Blue | Washed Rind | Brined | Stretched Curd | Other]  
               Cheese Type: [Fromaggio cheese type]  
@@ -142,7 +142,11 @@ app.post('/api/generate-cheese', async (req, res) => {
 
               Do not use fractions when giving numbers for ingredient amounts. Always round the numbers when possible, but if it's very important, then use a decimal, not a fraction.
 
-              Do not ask the user to clarify. No matter what the input is—short, long, or unclear—you must always create a recipe.`,
+              Do not ask the user to clarify. No matter what the input is—short, long, or unclear—you must always create a recipe.
+
+              Limit all recipes to a maximum of 10 steps.
+
+              Descriptions must be very short: no more than 2 simple sentences. Never exceed this.`,
           },
           {
             role: 'user',
