@@ -62,18 +62,6 @@ app.post('/api/generate-cheese', async (req, res) => {
               Cheese Type: [Fromaggio cheese type]  
 
               Steps:
-              Step1: [Step Title] - [Step Content]  
-              Step2: [Step Title] - [Step Content]  
-              Step3: ...
-
-              Every step must start with "StepX: [Title] - " and contain a clearly labeled instruction using the approved Fromaggio steps only.
-
-              Allowed Step Titles (must be exact):
-              +Milk, +Ingredients, Mix, Heat, Cut, Drain, Press, Blend, Affinage, Instructions
-
-              Use “Instructions” only for content that does not belong under any other step type. Every small action should be separated into its own step. Do not combine multiple operations into one step.
-
-              Example:
               Step1: +Milk - Use 3 liters of pasteurized whole cow’s milk.  
               Step2: Heat - Heat for 45 minutes to 35°C.  
               Step3: +Ingredients - Add 2 gram - Fromaggio FlavorPro Mesophilic Culture.
@@ -93,19 +81,22 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Do not add Calcium Chloride Boost before the Heat step
               - Culture must be added after heating
               - Example: "Add 2 gram - Fromaggio GoldStart Mesophilic Culture"
+              - Always use "Fromaggio Salt for Cheesemaking" when referring to salt.
 
               Heating
               - Label step only as "Heat" (no "Hold", "Maintain", etc.)
               - Heating rate is fixed: 1°C per 1.5 minutes from 2°C starting point
               - Use precise durations and target temperatures, not estimates
               - Example: "Heat for 45 minutes to 50°C"
+              - If recipe requires curd to "sit" at temperature, replace with "Heat" step indicating time, temperature, and specify "speed off"
+              - Example: "Heat for 2 minutes to 35°C. Speed off."
 
               Cultures
               - Always heat before adding cultures:
                 - Mesophilic: 45 min at 35°C
                 - Thermophilic: 45 min at 50°C
               - After any culture:
-                - Sit 2 minutes at same temp, no mixing
+                - Heat for 2 minutes to same temperature. Speed off.
                 - Then mix for 1 minute at 30 rpm
               - Ripening:
                 - FlavorPro or GoldStart: 45 min at 34°C
@@ -115,7 +106,7 @@ app.post('/api/generate-cheese', async (req, res) => {
               Rennet
               - After rennet addition:
                 - Mix 1 minute at 30 rpm
-                - Let sit 1 hour, maintain temperature, no mixing
+                - Heat for 60 minutes to same temperature. Speed off.
 
               Cut
               - Describe texture (soft or hard)
