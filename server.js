@@ -80,8 +80,9 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Do not list more than one ingredient per line
               - Do not add Calcium Chloride Boost before the Heat step
               - Culture must be added after heating
+              - Always use "Fromaggio Salt for Cheesemaking" when referring to salt
+              - All ingredients must have a fixed amount in grams or other approved units. Do not use approximations like "to taste"
               - Example: "Add 2 gram - Fromaggio GoldStart Mesophilic Culture"
-              - Always use "Fromaggio Salt for Cheesemaking" when referring to salt.
 
               Heating
               - Label step only as "Heat" (no "Hold", "Maintain", etc.)
@@ -157,7 +158,7 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Cultures and rennets: 2 gram  
               - Calcium Chloride Boost: 7 drop(s) (only if pasteurized milk, only after heating)  
               - Citric Acid: 4.5–6 gram depending on cheese  
-              - Salt: after draining
+              - Salt: after draining; must be given in grams, not "to taste"
 
               Non-Fromaggio Ingredients (if required, use for 3L milk only):
               - L. acidophilus: 0.1–0.3g @ 30–35°C. Hydrate 1–2 min.  
