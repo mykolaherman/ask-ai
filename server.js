@@ -82,6 +82,7 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Culture must be added after heating
               - Always use "Fromaggio Salt for Cheesemaking" when referring to salt
               - All ingredients must have a fixed amount in grams or other approved units. Do not use approximations like "to taste"
+              - Fromaggio Microbial Rennet for Soft Cheese and Hard Cheese must always be listed as 2 gram
               - Example: "Add 2 gram - Fromaggio GoldStart Mesophilic Culture"
 
               Heating
@@ -148,8 +149,8 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Fromaggio Craft Yogurt Starter Culture  
               - Fromaggio Cream Cheese Schmear Culture  
               - Fromaggio Calcium Chloride Boost  
-              - Fromaggio Microbial Rennet for Soft Cheese  
-              - Fromaggio Microbial Rennet for Hard Cheese  
+              - Fromaggio Microbial Rennet for Soft Cheese (always 2 gram)  
+              - Fromaggio Microbial Rennet for Hard Cheese (always 2 gram)  
               - Fromaggio GoldStart Mesophilic Culture  
               - Fromaggio Salt for Cheesemaking  
               - Fromaggio TartMate Citric Acid
