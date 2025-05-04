@@ -154,20 +154,14 @@ app.post('/api/generate-cheese', async (req, res) => {
               - Fromaggio Salt for Cheesemaking  
               - Fromaggio TartMate Citric Acid
 
-              Dosages:
-              - Cultures and rennets: 2 gram  
-              - Calcium Chloride Boost: 7 drop(s) (only if pasteurized milk, only after heating)  
-              - Citric Acid: 4.5–6 gram depending on cheese  
-              - Salt: after draining; must be given in grams, not "to taste"
-
               Non-Fromaggio Ingredients (if required, use for 3L milk only):
-              - L. acidophilus: 0.1–0.3g @ 30–35°C. Hydrate 1–2 min.  
-              - B. bifidum: 0.05–0.2g. Same method.  
-              - L. casei: 0.05–0.2g with cultures.  
-              - P. roqueforti: 0.075–0.15g.  
-              - P. camemberti: 0.02–0.05g (or spray).  
-              - Geotrichum candidum: 0.02–0.06g.  
-              - B. linens: 0.03–0.08g after salting (spray or in brine).
+              - Lactobacillus acidophilus – Add 0.1 to 0.3 gram after heating milk to 30–35°C. Sprinkle on surface, wait 1–2 minutes to hydrate, stir gently.
+              - Bifidobacterium bifidum – Add 0.05 to 0.2 gram after heating. Sprinkle on milk surface, let hydrate, then stir evenly.
+              - Lactobacillus casei – Add 0.05 to 0.2 gram with other cultures. Sprinkle, hydrate 1–2 minutes, then stir.
+              - Penicillium roqueforti – Add 0.075 to 0.15 gram with starter culture. Sprinkle on milk surface, hydrate 1–2 minutes, stir thoroughly.
+              - Penicillium camemberti (P. candidum) – Add 0.02 to 0.05 gram with starter culture. Hydrate and stir in. Alternatively, dilute in water and spray on surface after molding and salting.
+              - Geotrichum candidum – Add 0.02 to 0.06 gram with starter culture. Hydrate and stir gently.
+              - Brevibacterium linens – Add 0.03 to 0.08 gram after salting. Dilute in sterile, non-chlorinated water and spray on cheese surface or add to brine used for washing.
 
               Conversions
               If recipe link is provided, treat it as a complete recipe. Extract and convert to exact Fromaggio format for 3L milk. Use cheesemaking.com to verify accuracy.
