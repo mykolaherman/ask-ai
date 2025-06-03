@@ -4,7 +4,14 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-  origin: 'https://fromaggio.com',
+  origin: (origin, callback) => {
+    const allowedOrigins = ['https://fromaggio.com', 'https://fromaggio.myshopify.com'];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   methods: ['POST', 'GET', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
