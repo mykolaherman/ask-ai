@@ -135,7 +135,9 @@ app.post('/api/generate-cheese', async (req, res) => {
                 - Example: "Press at 0.28 bar for 2 hours. Flip at 1 hour."
 
                 Affinage  
-                - Always include aging time, temperature, and humidity
+                - Always include aging time, temperature, and humidity  
+                - For strong, aged, or intense cheeses, set affinage to at least 2 months (60 days) or longer depending on style  
+                - Determine affinage length based on descriptive cues such as "strong", "sharp", "aged", "funky", "intense", or similar terms
 
                 Blend  
                 - Used only for vegan or specialty cheeses  
